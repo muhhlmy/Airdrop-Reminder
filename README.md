@@ -6,21 +6,11 @@ Untuk Menggunakan Aplikasi Ini Kalian Harus Sudah Menginstall [Python](Https://W
 
 ------------
 
-
 ### Configuration
 1. Download Dan Masukkan File Dalam 1 Folder
 2. Edit **App.bat**, Ubah Bagian **cd "Your/Path/Airdrop/Folder"**
+3. Run VBS
 ------------
-### Run App
-Buka Terminal CMD Lalu Ketikkan Code Dibawah Ini :
-```Python
-cd "Your/Path/To/Airdrop/Folder"
-run streamlit Airdrop.py
-```
-
-------------
-
-
 
 ### Note
 
