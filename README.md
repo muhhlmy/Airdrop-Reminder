@@ -22,6 +22,6 @@ run streamlit Airdrop.py
 
 
 
-###Note
+### Note
 
 **cd“Your/Path/Airdrop/Folder"** : Copy Path Folder Airdrop dan ubah Kedalam **App.bat**
