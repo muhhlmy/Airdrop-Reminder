@@ -45,7 +45,7 @@ if selected == "Add new data":
                 'Note': data_note
             }
 
-            with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Airdrop.txt', 'a') as f:
+            with open('Data Airdrop.txt', 'a') as f:
                 json.dump(Data, f)
                 f.write('\n')
 
@@ -57,7 +57,7 @@ if selected == "Add new data":
 elif selected == "List Airdrop":
     st.header('')
     st.markdown('#### Data Airdrop')
-    with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Airdrop.txt', 'r') as f:
+    with open('Data Airdrop.txt', 'r') as f:
         data = f.read()
 
     data_list = []
@@ -90,7 +90,7 @@ elif selected == 'Change Progress':
     Delete = st.button('Delete')
 
     if Save:
-        with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Airdrop.txt', 'r') as f:
+        with open('Data Airdrop.txt', 'r') as f:
             data = f.read()
 
         data_list = []
@@ -107,7 +107,7 @@ elif selected == 'Change Progress':
                 elif Progress == 'Need to be Done' or Progress == 'Other':
                     data_list[i]['Note'] = Note
                 break
-        with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Airdrop.txt', 'w') as f:
+        with open('Data Airdrop.txt', 'w') as f:
             for airdrop_dict in data_list:
                 json.dump(airdrop_dict, f)
                 f.write('\n')
@@ -115,7 +115,7 @@ elif selected == 'Change Progress':
         st.success('Data has been Changed!')
 
     if Delete:
-        with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Airdrop.txt', 'r') as f:
+        with open('Data Airdrop.txt', 'r') as f:
             data = f.read()
 
         data_list = []
@@ -128,7 +128,7 @@ elif selected == 'Change Progress':
                 # Delete the dictionary
                 data_list.pop(i)
                 break
-        with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Airdrop.txt', 'w') as f:
+        with open('Data Airdrop.txt', 'w') as f:
             for airdrop_dict in data_list:
                 json.dump(airdrop_dict, f)
                 f.write('\n')
@@ -182,7 +182,7 @@ else:
                 'Note': WalletN
             }
 
-            with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Wallet.txt', 'a') as f:
+            with open('Data Wallet.txt', 'a') as f:
                 json.dump(Data, f)
                 f.write('\n')
 
@@ -193,7 +193,7 @@ else:
 
     st.header('')
     st.markdown('#### Data Wallet')
-    with open('C:/Users/mhdhe/OneDrive/Documents/Coding/Airdrop/Data Wallet.txt', 'r') as f:
+    with open('Data Wallet.txt', 'r') as f:
         data = f.read()
 
     data_list = []
